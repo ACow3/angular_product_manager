@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+.maincontent{
+    border: 2px solid black;
+    border-radius: 25px;
+    min-height: 400px;
+    padding: 15px;
+}
+
+.navbar a{
+    font-size: 16pt;
+}
+
+h1{
+    font-display: bold;
+}
+
+h2{
+    text-align: center;
+    font-size: 30;
+}
+
+img{
+    width: 75px;
+}

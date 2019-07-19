@@ -1,0 +1,12 @@
+<div class="h1">New Product</div>
+<form (submit)="onSubmit()">
+
+    <p class="text-danger">{{ productError.title }}</p>
+    <input type="text" placeholder="Title" class="form-control col-6 mb-2" name="newProduct.title" [(ngModel)]="newProduct.title" />
+    <p class="text-danger">{{ productError.price }}</p>
+    <input type="text" placeholder="Price" class="form-control col-6 mb-2" name="newProduct.price" [(ngModel)]="newProduct.price" />
+    <p class="text-danger">{{ productError.image }}</p>
+    <input type="text" placeholder="Image" class="form-control col-6 mb-2" name="newProduct.image" [(ngModel)]="newProduct.image" />
+    <input type="submit" class="btn btn-success" value="Create Product" />
+
+</form>

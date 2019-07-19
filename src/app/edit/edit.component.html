@@ -1,0 +1,12 @@
+<h1>Edit Product</h1>
+
+{{ product | json }}
+
+<form (submit)="onSubmit()">
+
+  <input type="text" placeholder="Title" class="form-control col-6 mb-2" name="product.title" [(ngModel)]="product.title" />
+  <input type="text" placeholder="Price" class="form-control col-6 mb-2" name="product.price" [(ngModel)]="product.price" />
+  <input type="text" placeholder="Image" class="form-control col-6 mb-2" name="product.image" [(ngModel)]="product.image" />
+  <input type="submit" class="btn btn-warning" value="Update Product" />
+
+</form>
